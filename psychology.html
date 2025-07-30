@@ -278,6 +278,14 @@
                 observer.observe(section);
             });
         });
+        // Hamburger menu toggle
+    document.addEventListener('DOMContentLoaded', () => {
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    });
     </script>
 </body>
 </html>
